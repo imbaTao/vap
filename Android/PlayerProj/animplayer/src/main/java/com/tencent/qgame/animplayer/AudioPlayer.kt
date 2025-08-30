@@ -60,6 +60,10 @@ class AudioPlayer(val player: AnimPlayer) {
         }
     }
 
+    fun setVolume(volume: Int) {
+        audioTrack.setVolume(volume)
+    }
+
     fun stop() {
         isStopReq = true
     }

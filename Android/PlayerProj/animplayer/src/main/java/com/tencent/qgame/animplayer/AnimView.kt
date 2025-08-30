@@ -308,4 +308,7 @@ open class AnimView @JvmOverloads constructor(context: Context, attrs: Attribute
         if (Looper.myLooper() == Looper.getMainLooper()) f() else uiHandler.post { f() }
     }
 
+    public fun setVolume(volume: Int) {
+        player.audioPlayer.setVolume(volume)
+    }
 }
